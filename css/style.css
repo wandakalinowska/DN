@@ -41,7 +41,8 @@ h2 {
   padding-top: 2.4em; }
   @media (min-width: 240px) and (max-width: 576px), (min-width: 577px) and (max-width: 767px) {
     h2 {
-      font-size: 1.4em; } }
+      font-size: 1.4em;
+      margin-top: 0.6em; } }
 
 header {
   height: 100vh; }
@@ -79,6 +80,9 @@ header {
       background-size: 100%;
       background-position: center;
       transition: 0.5s; }
+      @media (min-width: 577px) and (max-width: 767px), (min-width: 240px) and (max-width: 576px) {
+        .navbar .logo .logo--img {
+          background-image: url("../images/logo_black.png"); } }
   .navbar .menu {
     width: 50%;
     margin: 0 auto; }
@@ -234,25 +238,24 @@ header {
 .hero {
   position: absolute;
   margin: 0 auto;
-  top: 20%;
+  top: 16%;
   max-width: 1600px;
   width: 100%;
   z-index: 2; }
   @media (min-width: 992px) and (max-width: 1199px), (min-width: 577px) and (max-width: 767px), (min-width: 240px) and (max-width: 576px) {
     .hero {
-      top: 25%; } }
+      top: 20%; } }
   .hero .hero--content {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center; }
+    align-items: center; }
     .hero .hero--content .hero--img {
-      width: 500px;
+      width: 520px;
       height: 100%;
       margin: 0 auto; }
       @media (min-width: 577px) and (max-width: 767px), (min-width: 240px) and (max-width: 576px) {
         .hero .hero--content .hero--img {
-          width: 250px; } }
+          width: 9em; } }
     .hero .hero--content h2 {
       color: #fff;
       font-size: 2.8em;
@@ -267,7 +270,9 @@ header {
       @media (min-width: 577px) and (max-width: 767px), (min-width: 240px) and (max-width: 576px) {
         .hero .hero--content h2 {
           font-size: 1.5em;
-          letter-spacing: 0.1em; } }
+          letter-spacing: 0.1em;
+          margin: 0;
+          padding: 0 4em; } }
 
 .button__scroll--down {
   width: 80px;
@@ -492,8 +497,7 @@ header {
               font-size: 2em; } }
           @media (min-width: 240px) and (max-width: 576px), (min-width: 577px) and (max-width: 767px) {
             .leaders__content .leaders__photo .leaders__layer .leaders__desc .leaders__desc--name {
-              font-size: 1.6em;
-              padding: 1em; } }
+              font-size: 1.6em; } }
         .leaders__content .leaders__photo .leaders__layer .leaders__desc .leaders__desc--status {
           font-size: 1em;
           color: #fff;
