@@ -250,11 +250,10 @@ header {
     height: 100%;
     background-repeat: no-repeat;
     background-size: 100%;
-    background-position: center;
     background-attachment: fixed;
     @media #{$tablet, $smartphone, $phone, $smallphone} {
-        background-size: contain;
-        background-size: auto 100%;
+        background-size: cover;
+        width: 100%;
         background-position: 0% 0%;
 
     }
@@ -511,12 +510,12 @@ header {
 
 //------SECTION OUR LIDERS------
 
-.liders__container {
+.leaders__container {
     margin-top: 3.5em;
     margin-bottom: 6em;
 }
 
-.liders__content {
+.leaders__content {
     margin: 0 auto;
     width: 80%;
     display: flex;
@@ -529,7 +528,7 @@ header {
         justify-content: center;
         align-items: center;
     }
-    .liders__photo {
+    .leaders__photo {
         width: 30%;
         position: relative; 
         @media #{ $tablet} {
@@ -551,7 +550,7 @@ header {
             display: block;
             width: 100%; 
           }
-          .liders__layer {
+          .leaders__layer {
             position: absolute;
             top: 0;
             width: 100%;
@@ -565,11 +564,11 @@ header {
             &:hover {
                 opacity: 1;
             }
-            .liders__desc {
+            .leaders__desc {
                 background-color: rgba(0, 0, 0, 0.6);
                 height: 100%;
                 width: 100%; 
-                .liders__desc--name {
+                .leaders__desc--name {
                     padding-top: 10%;
                     font-family: $font02;
                     font-size: 1.4em;
@@ -578,7 +577,7 @@ header {
                     color: $white;
                     text-align: center;
                     margin: 1em 0;
-                    @media #{ $max} { 
+                    @media #{ $desktop, $max} { 
                         font-size: 1.2em;
                     }
                     @media #{ $smartphone, $tablet} { 
@@ -589,7 +588,7 @@ header {
                         padding: 1em;
                     }
                 }
-                .liders__desc--status {
+                .leaders__desc--status {
                     font-size: 1em;
                     color: $white;
                     text-align: center;
@@ -601,12 +600,12 @@ header {
                         font-size: 1em;
                     }
                 }
-                .liders__desc--line {
+                .leaders__desc--line {
                     margin: 0 auto;
                     width: 20%;
                     border-bottom: solid 1px $grey;
                 }
-                .liders__desc--desc {
+                .leaders__desc--desc {
                     font-family: $font01;
                     text-align: center;
                     padding: 0 10% 12% 10%;
@@ -618,9 +617,13 @@ header {
                     @media #{ $tablet, $smartphone, $smallphone, $phone} { 
                         display: none;
                     }
-                    @media #{ $max} { 
+                    @media #{$max} { 
                         font-size: 0.9em;
                         line-height: 1.3em;
+                    }
+                    @media #{$desktop} { 
+                        font-size: 0.8em;
+                        line-height: 1em;
                     }
                 }
             }

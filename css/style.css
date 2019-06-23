@@ -199,12 +199,11 @@ header {
   height: 100%;
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: center;
   background-attachment: fixed; }
   @media (min-width: 992px) and (max-width: 1199px), (min-width: 768px) and (max-width: 991px), (min-width: 577px) and (max-width: 767px), (min-width: 240px) and (max-width: 576px) {
     .slideshow__img {
-      background-size: contain;
-      background-size: auto 100%;
+      background-size: cover;
+      width: 100%;
       background-position: 0% 0%; } }
 
 .slideshow__img:nth-child(1) {
@@ -419,45 +418,45 @@ header {
   .backtoup__button:hover {
     background-image: url("../images/button/button_up--hover.png"); }
 
-.liders__container {
+.leaders__container {
   margin-top: 3.5em;
   margin-bottom: 6em; }
 
-.liders__content {
+.leaders__content {
   margin: 0 auto;
   width: 80%;
   display: flex;
   justify-content: space-between; }
   @media (min-width: 992px) and (max-width: 1199px) {
-    .liders__content {
+    .leaders__content {
       width: 100%; } }
   @media (min-width: 768px) and (max-width: 991px), (min-width: 577px) and (max-width: 767px), (min-width: 240px) and (max-width: 576px) {
-    .liders__content {
+    .leaders__content {
       flex-direction: column;
       justify-content: center;
       align-items: center; } }
-  .liders__content .liders__photo {
+  .leaders__content .leaders__photo {
     width: 30%;
     position: relative; }
     @media (min-width: 992px) and (max-width: 1199px) {
-      .liders__content .liders__photo {
+      .leaders__content .leaders__photo {
         width: 30%; } }
     @media (min-width: 768px) and (max-width: 991px) {
-      .liders__content .liders__photo {
+      .leaders__content .leaders__photo {
         width: 60%;
         margin: 10% 0; } }
     @media (min-width: 577px) and (max-width: 767px) {
-      .liders__content .liders__photo {
+      .leaders__content .leaders__photo {
         width: 50%;
         margin: 10% 0; } }
     @media (min-width: 240px) and (max-width: 576px) {
-      .liders__content .liders__photo {
+      .leaders__content .leaders__photo {
         width: 90%;
         margin: 10% 0; } }
-    .liders__content .liders__photo img {
+    .leaders__content .leaders__photo img {
       display: block;
       width: 100%; }
-    .liders__content .liders__photo .liders__layer {
+    .leaders__content .leaders__photo .leaders__layer {
       position: absolute;
       top: 0;
       width: 100%;
@@ -468,13 +467,13 @@ header {
       padding: 10px;
       opacity: 0;
       transition: 1.5s; }
-      .liders__content .liders__photo .liders__layer:hover {
+      .leaders__content .leaders__photo .leaders__layer:hover {
         opacity: 1; }
-      .liders__content .liders__photo .liders__layer .liders__desc {
+      .leaders__content .leaders__photo .leaders__layer .leaders__desc {
         background-color: rgba(0, 0, 0, 0.6);
         height: 100%;
         width: 100%; }
-        .liders__content .liders__photo .liders__layer .liders__desc .liders__desc--name {
+        .leaders__content .leaders__photo .leaders__layer .leaders__desc .leaders__desc--name {
           padding-top: 10%;
           font-family: "Open Sans", sans-serif;
           font-size: 1.4em;
@@ -483,32 +482,32 @@ header {
           color: #fff;
           text-align: center;
           margin: 1em 0; }
-          @media (min-width: 1600px) {
-            .liders__content .liders__photo .liders__layer .liders__desc .liders__desc--name {
+          @media (min-width: 1200px) and (max-width: 1599px), (min-width: 1600px) {
+            .leaders__content .leaders__photo .leaders__layer .leaders__desc .leaders__desc--name {
               font-size: 1.2em; } }
           @media (min-width: 768px) and (max-width: 991px), (min-width: 992px) and (max-width: 1199px) {
-            .liders__content .liders__photo .liders__layer .liders__desc .liders__desc--name {
+            .leaders__content .leaders__photo .leaders__layer .leaders__desc .leaders__desc--name {
               font-size: 2em; } }
           @media (min-width: 240px) and (max-width: 576px), (min-width: 577px) and (max-width: 767px) {
-            .liders__content .liders__photo .liders__layer .liders__desc .liders__desc--name {
+            .leaders__content .leaders__photo .leaders__layer .leaders__desc .leaders__desc--name {
               font-size: 1.6em;
               padding: 1em; } }
-        .liders__content .liders__photo .liders__layer .liders__desc .liders__desc--status {
+        .leaders__content .leaders__photo .leaders__layer .leaders__desc .leaders__desc--status {
           font-size: 1em;
           color: #fff;
           text-align: center;
           letter-spacing: 0.3em; }
           @media (min-width: 768px) and (max-width: 991px), (min-width: 992px) and (max-width: 1199px) {
-            .liders__content .liders__photo .liders__layer .liders__desc .liders__desc--status {
+            .leaders__content .leaders__photo .leaders__layer .leaders__desc .leaders__desc--status {
               font-size: 1.4em; } }
           @media (min-width: 240px) and (max-width: 576px), (min-width: 577px) and (max-width: 767px) {
-            .liders__content .liders__photo .liders__layer .liders__desc .liders__desc--status {
+            .leaders__content .leaders__photo .leaders__layer .leaders__desc .leaders__desc--status {
               font-size: 1em; } }
-        .liders__content .liders__photo .liders__layer .liders__desc .liders__desc--line {
+        .leaders__content .leaders__photo .leaders__layer .leaders__desc .leaders__desc--line {
           margin: 0 auto;
           width: 20%;
           border-bottom: solid 1px #797979; }
-        .liders__content .liders__photo .liders__layer .liders__desc .liders__desc--desc {
+        .leaders__content .leaders__photo .leaders__layer .leaders__desc .leaders__desc--desc {
           font-family: Helvetica, Arial, sans-serif;
           text-align: center;
           padding: 0 10% 12% 10%;
@@ -518,12 +517,16 @@ header {
           font-size: 10px;
           line-height: 1.5em; }
           @media (min-width: 992px) and (max-width: 1199px), (min-width: 768px) and (max-width: 991px), (min-width: 240px) and (max-width: 576px), (min-width: 577px) and (max-width: 767px) {
-            .liders__content .liders__photo .liders__layer .liders__desc .liders__desc--desc {
+            .leaders__content .leaders__photo .leaders__layer .leaders__desc .leaders__desc--desc {
               display: none; } }
           @media (min-width: 1600px) {
-            .liders__content .liders__photo .liders__layer .liders__desc .liders__desc--desc {
+            .leaders__content .leaders__photo .leaders__layer .leaders__desc .leaders__desc--desc {
               font-size: 0.9em;
               line-height: 1.3em; } }
+          @media (min-width: 1200px) and (max-width: 1599px) {
+            .leaders__content .leaders__photo .leaders__layer .leaders__desc .leaders__desc--desc {
+              font-size: 0.8em;
+              line-height: 1em; } }
 
 .sentence {
   background-color: #1e1e1e; }
