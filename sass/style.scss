@@ -171,9 +171,11 @@ header {
             flex-direction: column;
             .menu__list--item {
                 margin: 0;
+                padding: 0.8em 0;
                 .menu__list--link {
                     color: $black;
                     padding: 1em;
+                    font-size: 0.8em;
                 }
             }
         }
@@ -290,7 +292,7 @@ header {
     width: 100%;
     z-index: 2;
     @media #{$tablet, $phone, $smallphone} { 
-        top: 30%;
+        top: 25%;
     }
     .hero--content {
         display: flex;
@@ -317,7 +319,7 @@ header {
                font-size: 3em;
             }
             @media #{ $phone, $smallphone} { 
-                font-size: 2em;
+                font-size: 1.5em;
                 letter-spacing: 0.1em;
             }
         }
