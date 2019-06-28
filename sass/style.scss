@@ -460,21 +460,27 @@ header {
             flex-direction: column;
             margin-bottom: 2em;
             h3 {
+                position: relative;
                 text-align: center;
                 font-family: $font02;
                 letter-spacing: 0.1em;
-                font-size: 1.6em;  
+                font-size: 2.4em;  
                 color: $lightgrey;
                 font-weight: 300;
+                letter-spacing: 0.9em;
+                text-transform: uppercase;
                 @media #{$smallphone, $phone} { 
-                    font-size: 1.4em;
+                    letter-spacing: 0.5em;
                 }
-                span {
-                    letter-spacing: 0.9em;
-                    text-transform: uppercase;
-                    @media #{$smallphone, $phone} { 
-                        letter-spacing: 0.5em;
-                    }
+                span{
+                    position: absolute;
+                    font-family: $font01;
+                    letter-spacing: 0.2em;
+                    font-size: 0.3em;  
+                    color: $lightgrey;
+                    font-weight: 400;
+                    bottom: 5px;
+                    text-transform: lowercase;
                 }
             }
             p {
