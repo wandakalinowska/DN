@@ -464,9 +464,9 @@ header {
                 text-align: center;
                 font-family: $font02;
                 letter-spacing: 0.1em;
-                font-size: 2.4em;  
+                font-size: 1.8em;  
                 color: $lightgrey;
-                font-weight: 300;
+                font-weight: 600;
                 letter-spacing: 0.9em;
                 text-transform: uppercase;
                 @media #{$smallphone, $phone} { 
@@ -476,10 +476,10 @@ header {
                     position: absolute;
                     font-family: $font01;
                     letter-spacing: 0.2em;
-                    font-size: 0.3em;  
+                    font-size: 0.5em;  
                     color: $lightgrey;
                     font-weight: 400;
-                    bottom: 5px;
+                    bottom: 3px;
                     text-transform: lowercase;
                 }
             }
