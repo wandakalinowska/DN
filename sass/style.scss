@@ -24,7 +24,7 @@ $smallphone: "(min-width: 240px) and (max-width: 576px)";
 body {
     margin: 0 auto;
     font-family: $font01;
-    font-size: 14px;
+    font-size: 100%;
     max-width: 1600px;
     width: 100%;
     height: 100%;
@@ -448,10 +448,11 @@ header {
     background-color: $black;
     color: $white;
     .about__head {
-        color: $white;
+        color: $lightgrey;
+        font-family: $font01;
     }
     .about__line {
-        border-bottom: 1px solid $white;
+        border-bottom: 1px solid $lightgrey;
     }
     .about__container {
         margin-top: 3.5em;
@@ -481,6 +482,8 @@ header {
                     font-weight: 400;
                     bottom: 3px;
                     text-transform: lowercase;
+                    @media #{$smallphone, $phone} { 
+                    }
                 }
             }
             p {
@@ -569,11 +572,9 @@ header {
             width: 100%;
             height: 100%;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 10px;
             opacity: 0;
             transition: 1.5s;
+            padding: 5%;
             &:hover {
                 opacity: 1;
             }
@@ -582,60 +583,94 @@ header {
                 height: 100%;
                 width: 100%; 
                 .leaders__desc--name {
-                    padding-top: 10%;
+                    height: 15%;
                     font-family: $font02;
-                    font-size: 1.4em;
-                    letter-spacing: 0.2em;
                     text-transform: uppercase;
                     color: $white;
                     text-align: center;
-                    margin: 1em 0;
-                    @media #{ $desktop, $max} { 
-                        font-size: 1.2em;
+                    font-size: 1.5em;
+                    margin: 0;
+                    padding-top: 10px;
+                    @media #{$max} { 
+                        font-size: 1.4em;
                     }
-                    @media #{ $smartphone, $tablet} { 
-                        font-size: 2em;
+                    @media #{ $desktop} { 
+                        font-size: 1.4em;
                     }
-                    @media #{$smallphone, $phone} { 
+                    @media #{$tablet} { 
+                        font-size: 1.3em;
+                    }
+                    @media #{ $smartphone} { 
                         font-size: 1.6em;
+                    }
+                    @media #{$phone} { 
+                        font-size: 1em;
+                    }
+                    @media #{$smallphone} { 
+                        font-size: 0.9em;
                     }
                 }
                 .leaders__desc--status {
-                    font-size: 1em;
+                    margin: 0;
+                    height: 10%;
                     color: $white;
                     text-align: center;
                     letter-spacing: 0.3em;
-                    @media #{ $smartphone, $tablet} { 
-                        font-size: 1.4em;
+                    font-size: 1em;
+                    @media #{ $desktop} { 
+                        font-size: 0.9em;
                     }
-                    @media #{$smallphone, $phone} { 
-                        font-size: 1em;
+                    @media #{$tablet} { 
+                        font-size: 1.2em;
+                    }
+                    @media #{ $smartphone} { 
+                        font-size: 0.9em;
+                    }
+                    @media #{$phone} { 
+                        font-size: 0.8em;
+                    }
+                    @media #{$smallphone} { 
+                        font-size: 0.6em;
                     }
                 }
                 .leaders__desc--line {
                     margin: 0 auto;
                     width: 20%;
-                    border-bottom: solid 1px $grey;
+                    height: 5%;
+                    border-top: solid 1px $grey;
                 }
                 .leaders__desc--desc {
-                    font-family: $font01;
+                    height: 70%;
+                    width: 100%;
+                    font-family: $font02;
                     text-align: center;
-                    padding: 0 10% 12% 10%;
                     color: $white;
                     letter-spacing: 0.2em;
                     font-weight: 300;
-                    font-size: 10px;
-                    line-height: 1.5em;
-                    @media #{ $tablet, $smartphone, $smallphone, $phone} { 
-                        display: none;
-                    }
-                    @media #{$max} { 
-                        font-size: 0.9em;
-                        line-height: 1.3em;
-                    }
-                    @media #{$desktop} { 
-                        font-size: 0.8em;
-                        line-height: 1em;
+                    padding: 0 5%;
+                    font-size: 100%;
+                    line-height: 1.6em;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    @media #{ $desktop} { 
+                            font-size: 0.8rem;
+                            line-height: 1.4em;
+                        }
+                    @media #{ $tablet} { 
+                            font-size: 0.8rem;
+                            line-height: 1.4em;
+                        }
+                    @media #{ $smartphone} { 
+                            font-size: 0.9rem;
+                            line-height: 1.4em;
+                        }
+                    @media #{$phone} { 
+                            font-size: 0.6rem;
+                            line-height: 1.5em;
+                        }
+                    @media #{$smallphone} { 
+                            font-size: 0.6rem;
+                            line-height: 1.4em;
                     }
                 }
             }
